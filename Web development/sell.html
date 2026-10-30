@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sell produce – AgriSoko</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="sell">
+<header>
+  <div class="top"><span class="brand">🌾 AgriSoko</span><span class="row"><span class="mu" id="who"></span><button class="btn g s" id="lo">Log out</button></span></div>
+  <nav id="nv">
+    <a href="prices.html" data-v="prices">Market prices</a><a href="market.html" data-v="market">Marketplace</a><a href="sell.html" data-v="sell">Sell produce</a>
+    <a href="shop.html" data-v="shop">Agrovet shop</a><a href="cart.html" data-v="cart">Cart<span class="badge" id="cb" hidden></span></a><a href="orders.html" data-v="orders">My orders</a>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="on"><h2>Sell your produce</h2><p class="sub">List what you have and buyers will see it in the marketplace.</p>
+    <div class="two"><form class="card" id="sf">
+      <label for="sp">Product</label><input id="sp" required placeholder="e.g. Hass avocado">
+      <div class="row"><div style="flex:1"><label for="sq">Quantity</label><input id="sq" type="number" min="1" required></div>
+      <div style="flex:1"><label for="su">Unit</label><select id="su"><option>kg</option><option>bag</option><option>crate</option><option>bunch</option><option>litre</option><option>tray</option></select></div></div>
+      <label for="sr">Price per unit (KES)</label><input id="sr" type="number" min="1" required>
+      <label for="sl">Location</label><input id="sl" required placeholder="e.g. Nakuru">
+      <label for="sh">Phone number</label><input id="sh" type="tel" required placeholder="07XXXXXXXX">
+      <label for="si">Photo of your product (optional)</label><input id="si" type="file" accept="image/*">
+      <button class="btn" style="margin-top:14px;width:100%">List product</button></form>
+    <div><h3 style="margin-top:0">My listings</h3><div id="my" class="grid" style="grid-template-columns:1fr"></div></div></div></section>
+</main>
+<div id="toast" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>

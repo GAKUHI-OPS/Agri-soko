@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Log in – AgriSoko</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+<div id="auth" class="wrap"><div class="auth card">
+  <div class="brand" style="font-size:1.6rem">🌾 AgriSoko</div>
+  <p class="mu">Farmers’ marketplace: prices, selling, agrovet shop and M-Pesa payments.</p>
+  <div class="row" style="margin:8px 0"><button class="btn s" id="tl">Log in</button><button class="btn g s" id="tr">Register</button></div>
+  <form id="af" autocomplete="on">
+    <div id="nw" hidden><label for="nm">Full name</label><input id="nm" autocomplete="name"></div>
+    <label for="em">Email</label><input id="em" type="email" autocomplete="email" required>
+    <label for="pw">Password (min. 6 characters)</label><input id="pw" type="password" autocomplete="current-password" required>
+    <div class="err" id="ae"></div>
+    <button class="btn" style="width:100%;margin-top:8px" id="ab">Log in</button>
+  </form>
+</div></div>
+<script src="script.js"></script>
+</body>
+</html>

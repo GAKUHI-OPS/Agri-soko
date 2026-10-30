@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Market prices – AgriSoko</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="prices">
+<header>
+  <div class="top"><span class="brand">🌾 AgriSoko</span><span class="row"><span class="mu" id="who"></span><button class="btn g s" id="lo">Log out</button></span></div>
+  <nav id="nv">
+    <a href="prices.html" data-v="prices">Market prices</a><a href="market.html" data-v="market">Marketplace</a><a href="sell.html" data-v="sell">Sell produce</a>
+    <a href="shop.html" data-v="shop">Agrovet shop</a><a href="cart.html" data-v="cart">Cart<span class="badge" id="cb" hidden></span></a><a href="orders.html" data-v="orders">My orders</a>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="on"><h2>Market prices</h2><p class="sub">Indicative sample prices in KES. Connect a live source (for example KAMIS) to keep them current.</p>
+    <input id="ps" placeholder="Search a product, e.g. maize" style="margin-bottom:12px">
+    <div class="tw"><table><thead><tr><th>Product</th><th>Unit</th><th>Price</th><th>Change</th></tr></thead><tbody id="pt"></tbody></table></div></section>
+</main>
+<div id="toast" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
